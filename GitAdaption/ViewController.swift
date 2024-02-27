@@ -22,8 +22,6 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         vm1.setup()
-        
-        
     }
     
     func setup() {
