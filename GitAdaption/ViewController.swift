@@ -34,5 +34,6 @@ class ViewController: UIViewController {
 class ViewModel {
     func setup() {
         print("setup")
+        print("I'm sub")
     }
 }
