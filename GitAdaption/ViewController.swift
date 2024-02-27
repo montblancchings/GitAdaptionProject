@@ -37,5 +37,6 @@ class ViewController: UIViewController {
 class ViewModel {
     func setup() {
         print("setup")
+        print("develop job 1")
     }
 }
