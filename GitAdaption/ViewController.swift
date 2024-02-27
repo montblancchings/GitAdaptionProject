@@ -9,13 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let vm: ViewModel = ViewModel()
+    var vm1: ViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        vm.setup()
+        setup()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        vm1.setup()
+    }
+    
+    func setup() {
+        guard vm1 == nil else { return }
+        vm1 = ViewModel()
     }
 
 }
